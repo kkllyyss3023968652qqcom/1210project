@@ -1,0 +1,911 @@
+header,nav,.index-banner,.home-selling,.category,.konka,.site-footer,.for-footer,.for-theme{
+    width: 1142px;
+    margin: 0 auto;
+}
+/* 头部************************************************************** */
+header{
+    height: 38px;
+    background:#333;
+}
+.header_bg{
+    width: 100%;
+    background:#333;
+}
+header .header_left{
+    float: left;
+}
+header .header_right{
+    float: right;
+}
+header ul li{
+    float: left;
+    line-height: 38px;
+    color: #b0b0b0;
+    font-size: 12px;
+    
+}
+header .header_left li{
+    margin-right: 10px;
+}
+header .header_right li{
+    margin-left: 10px;
+}
+header ul li a{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+header .header_right li:nth-child(4){
+    width: 115px;
+    background: #424242;
+    text-align: center
+}
+header .header_right li:nth-child(4) img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* 导航栏 **************************************************************/
+.nav_bg{
+    width: 100%;
+    background: #f4f4f4;
+    height: 50px;
+    position: relative;
+}
+nav{
+    height: 50px;
+    background: #f4f4f4;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 1px;
+    position: absolute;
+    left: 104px;
+    z-index: 25;
+}
+nav ul li{
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+nav ul li:nth-child(1){
+    width: 162px;
+    height: 42px;
+    padding-top: 8px;
+}
+nav ul li:nth-child(13) a{
+    padding-top: 5px;
+    height: 45px;
+}
+nav ul li:nth-child(13) a:hover{
+    height: 45px;
+}
+nav ul li a{
+    display: block;
+    height: 50px;
+    width: 72px;
+    color: #939393;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    background:#fff;
+    height: 50px;
+    width: 72px;
+    color: #ed1c24;
+}
+
+
+
+/* banner图 ***************************************************************/
+.swiper-container {
+    width: 100%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+    .swiper-slide .img{
+            position: absolute;
+            left: -250px;
+    }
+    .swiper-container .swiper-button-prev,.swiper-container .swiper-button-next{
+        width: 40px;
+        height: 60px;
+        border: none;
+        background: rgba(0, 0, 0, 0.4);
+        font-size: 25px;
+        position: absolute;
+        top: 225px;
+        z-index: 20;
+        line-height: 60px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .swiper-container .swiper-button-prev{
+        left: 354px;
+    }
+    .swiper-container .swiper-button-next{
+        right: 120px;
+    }
+    .swiper-container .swiper-pagination{
+    position: absolute;
+    bottom: 27px;
+    }
+    .swiper-container .swiper-pagination span{
+    width: 50px;
+    height: 7px;
+    background: black;
+    border-radius: 0%;   
+    }
+
+    .swiper-container .container-list{
+        height: 500px;
+        width: 234px;
+        position: absolute;
+        top: 0;
+        left: 104px;
+        z-index: 30;
+        background: rgba(0, 0, 0, 0.6)
+    }
+    .swiper-container .container-list>ul{
+        margin-top: 25px;
+    }
+    .swiper-container .container-list>ul>li>a>span{
+        float: right;
+        font-weight: bold;
+        font-size: 15px;
+        margin-right: 22px;
+    }
+    .swiper-container .container-list>ul>li>a{
+        display: inline-block;
+        height: 45px;
+        width: 204px;
+        color: #fff;
+        font-size: 12px;
+        padding-left:30px; 
+        line-height: 45px;
+    }
+    .swiper-container .container-list>ul>li>a:hover{
+        background: #ed1c24;
+    }
+    .swiper-container .container-list>ul>li .list_electric,
+    .swiper-container .container-list>ul>li .list_Refrigerator{
+        width: 456px;
+        height: 500px;
+        position: absolute;
+        left: 234px;
+        top: 0;
+        background: #fff;
+        display: none;
+    }
+    .swiper-container .container-list>ul>li:hover .list_electric,
+    .swiper-container .container-list>ul>li:hover .list_Refrigerator{
+        display: block;
+    }
+    .swiper-container .container-list>ul>li .list_electric,
+    .swiper-container .container-list>ul>li .list_Refrigerator {
+        padding: 27px;
+        height: 473px;
+    }
+    .swiper-container .container-list>ul>li .list_electric ul,
+    .swiper-container .container-list>ul>li .list_electric ol,
+    .swiper-container .container-list>ul>li .list_Refrigerator ul,
+    .swiper-container .container-list>ul>li .list_Refrigerator ol {
+        float: left;
+    }
+    .swiper-container .container-list>ul>li .list_electric ul li,
+    .swiper-container .container-list>ul>li .list_electric ol li,
+    .swiper-container .container-list>ul>li .list_Refrigerator ul li,
+    .swiper-container .container-list>ul>li .list_Refrigerator ol li{
+        margin-bottom: 40px;
+        margin-right: 100px;
+    }
+    .swiper-container .container-list>ul>li .list_electric ul li a ,
+    .swiper-container .container-list>ul>li .list_electric ol li a ,
+    .swiper-container .container-list>ul>li .list_Refrigerator ul li a ,
+    .swiper-container .container-list>ul>li .list_Refrigerator ol li a{
+        font-size: 14px;
+        color: #6e6e6e;
+       
+    }
+    .swiper-container .container-list>ul>li .list_electric ul li a img,
+    .swiper-container .container-list>ul>li .list_electric ol li a img,
+    .swiper-container .container-list>ul>li .list_Refrigerator ul li a img,
+    .swiper-container .container-list>ul>li .list_Refrigerator ol li a img{
+        vertical-align: middle;
+    }
+    .swiper-container .container-list>ul>li .list_electric ul li:hover a,
+    .swiper-container .container-list>ul>li .list_electric ol li:hover a,
+    .swiper-container .container-list>ul>li .list_Refrigerator ul li:hover a,
+    .swiper-container .container-list>ul>li .list_Refrigerator ol li:hover a{
+        color: #ed1c24;
+    }
+
+    /* 轮播图下面两部分 ***************************************************************/
+    .home-selling{
+        height: 670px;
+    }
+    .home-selling .row{
+        height: 200px;
+        background: #fff;
+    }
+    .home-selling .row>ul>li{
+        float: left;
+        width: 270px;
+        height: 180px;
+        margin:20px 18px 0 0;
+    }
+    .home-selling .row>ul>li>a>img{
+        width: 270px;
+        height: 180px;
+    }
+    .home-selling .row>ul>li:nth-child(4){
+        float: right;
+        margin-right: 0px;
+    }
+    .home-selling .row>ul>li:nth-child(1) div{
+        width: 90px;
+        height: 68px;
+        float: left;
+        text-align: center;
+        padding-top: 22px;
+        
+    }
+    .home-selling .row>ul>li:nth-child(1) div:hover{
+        background: #ee3239;
+        transition: all .5s;
+    }
+    .home-selling .row>ul>li:nth-child(1) div img{
+        width: 30px;
+        height: 27px;
+    }
+    .home-selling .row>ul>li:nth-child(1) div p{
+        font-size: 14px;
+        color: #fff;
+    }
+    .home-selling .row>ul>li:nth-child(1) .row_1,
+    .home-selling .row>ul>li:nth-child(1) .row_3,
+    .home-selling .row>ul>li:nth-child(1) .row_5 {
+        background: #f68387;
+
+    }
+    .home-selling .row>ul>li:nth-child(1) .row_2,
+    .home-selling .row>ul>li:nth-child(1) .row_4,
+    .home-selling .row>ul>li:nth-child(1) .row_6 {
+        background: #f2555b;
+    }
+
+/* 明星产品 ***************************************************************/
+    .home-selling .home-star{
+        height: 420px;
+        background: #fff;
+        position: relative;
+    }
+    .home-selling .home-star .star-title{
+        height: 80px;
+        background: #fff;
+    }
+    .home-selling .home-star .star-title h2 a{
+        font-size: 20px;
+        color: #767676;
+        float: left;
+        margin-top: 40px;
+        float: left;
+    }
+    .home-selling .home-star .star-title h2 a:hover{
+        color: #000;
+    }
+    .home-selling .home-star .star-title h2 img{
+        margin: 35px 10px 0 0;
+        float: left;
+    }
+    
+    .home-selling .home-star .star-swiper-container {
+        width: 1142px;
+        height: 338px;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+    .home-selling .home-star .swiper-button-prev, .home-selling .home-star .swiper-button-next{
+        width: 20px;
+        height: 30px;
+        border: none;
+        background: rgba(0, 0, 0, 0.4);
+        font-size: 15px;
+        position: absolute;
+        top: 70px;
+        z-index: 20;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .home-selling .home-star .swiper-button-prev{
+        left:1050px;
+    }
+    .home-selling .home-star .swiper-button-next{
+        right: 30px;
+    }
+
+
+    .home-selling .home-star .star-goods .goods_one{
+        float: left;
+        width: 270px;
+        height: 338px;
+        background:#f7f7f7;
+        margin-right: 20px;
+        text-align: center;a
+    }
+    .home-selling .home-star .star-goods .goods_one:nth-child(4){
+        float: right;
+        margin-right:0px;
+    }
+    .home-selling .home-star .star-goods .goods_one img{
+        margin-left: 28px ;
+    }
+    .home-selling .home-star .star-goods .goods_one h3{
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+    .home-selling .home-star .star-goods .goods_one p{
+        font-size: 13px;
+        color: #989898;
+        margin-bottom: 16px;
+    }
+    .home-selling .home-star .star-goods .goods_one span:nth-child(4){
+        color: #ed1c24;
+        font-size: 14px;
+    }
+    .home-selling .home-star .star-goods .goods_one span:nth-child(5){
+        color: #b0b0b0;
+        font-size: 14px;
+        text-decoration: line-through;
+    }
+/* 几大类别*************************************************************** */
+.category-bg{
+    width: 100%;
+    background: #f7f7f7;
+}
+.category{
+    height: 7444px;
+}
+/* --------------------电视 、冰箱-------------------------------*/
+.category #television,
+.category #Refrigerator{
+    height: 1200px;
+    background: #f7f7f7;
+}
+.category #television .television-title,
+.category #Refrigerator .Refrigerator-title{
+    height: 48px;
+    padding-top: 60px;
+}
+.category #television .television-title h3 img,
+.category #Refrigerator .Refrigerator-title h3 img{
+    vertical-align: middle;
+}
+.category #television .television-title h3 a,
+.category #Refrigerator .Refrigerator-title h3 a{
+    font-size: 22px;
+    color: #767676;
+}
+.category #television .television-title h3 a:hover,
+.category #Refrigerator .Refrigerator-title h3 a:hover{
+    color: #000;
+}
+.category #television .television-title .title-select,
+.category #Refrigerator .Refrigerator-title .title-select{
+    float: right;
+    margin-top:-20px;
+}
+.category #television .television-title .title-select li,
+.category #Refrigerator .Refrigerator-title .title-select li{
+    float: left;
+    margin-left: 5px;
+}
+.category #television .television-title .title-select li a,
+.category #Refrigerator .Refrigerator-title .title-select li a{
+    font-size: 13px;
+    color: #000;
+}
+.category #television .television-title .title-select li a:hover,
+.category #Refrigerator .Refrigerator-title .title-select li a:hover{
+    color: #ff5b57;
+}
+.category #television .television-title .title-select li:nth-child(11) a{
+    color: #ff5b57;
+}
+.category #Refrigerator .Refrigerator-title .title-select li:nth-child(9) a{
+    color: #ff5b57;
+}
+.category #television .television-bigimg,
+.category #Refrigerator .Refrigerator-bigimg{
+    height: 372px;
+}
+.category #television .television-goods,
+.category #Refrigerator .Refrigerator-goods{
+    height: 698px;
+}
+.category #television .television-goods div,
+.category #Refrigerator .Refrigerator-goods div{
+    height: 340px;
+    width: 272px;
+    background: #fff;
+    margin:19px 14px 0 0;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.category #television .television-goods div:nth-child(4),.category #television .television-goods div:nth-child(8),
+.category #Refrigerator .Refrigerator-goods div:nth-child(4),.category #Refrigerator .Refrigerator-goods div:nth-child(8){
+    float: right;
+    margin-right: 0px;
+}
+.category #television .television-goods div img,
+.category #Refrigerator .Refrigerator-goods div img{
+    margin:30px 0 20px 0;
+}
+.category #television .television-goods div h3,
+.category #Refrigerator .Refrigerator-goods div h3{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.category #television .television-goods div p,
+.category #Refrigerator .Refrigerator-goods div p{
+    font-size: 13px;
+    color: #989898;
+    margin-bottom: 12px;
+}
+.category #television .television-goods div span,
+.category #Refrigerator .Refrigerator-goods div span{
+    font-size: 13px;
+}
+.category #television .television-goods div span:nth-child(4),
+.category #Refrigerator .Refrigerator-goods div span:nth-child(4){
+    color: #ed1c24;
+}
+.category #television .television-goods div span:nth-child(5),
+.category #Refrigerator .Refrigerator-goods div span:nth-child(5){
+    color: #989898;
+    text-decoration: line-through;
+}
+.category #television .television-goods div .television-star,
+.category #Refrigerator .Refrigerator-goods div .Refrigerator-star{
+    height: 100px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 320px;
+    display: none;
+    z-index:2 ;
+    
+}
+.category #television .television-goods div .television-star p,
+.category #Refrigerator .Refrigerator-goods div .Refrigerator-star p{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 18px;
+}
+.category #television .television-goods div .television-star span,
+.category #Refrigerator .Refrigerator-goods div .Refrigerator-star span{
+    color: #ffd84f;
+    font-size: 22px;
+}
+.category #television .television-goods div:hover .television-star,
+.category #Refrigerator .Refrigerator-goods div:hover .Refrigerator-star{
+    display: block;
+    top: 221px;
+    transition: all 0.5s; 
+}
+.category #television .television-goods div:hover,
+.category #Refrigerator .Refrigerator-goods div:hover{
+    box-shadow: 0 5px 10px #333;
+    transition: all 0.5s; 
+}
+
+/* ---------------------------洗衣机、手机、生活电器、智能硬件、智能家居、K迷优品-----------------------------*/
+.category #washing,
+.category #iphone,
+.category #appliances,
+.category #Hardware,
+.category #IOT,
+.category #parts{
+    height: 840px;
+    background: #f7f7f7;
+}
+.category #washing .washing-title,
+.category #iphone .iphone-title,
+.category #appliances .appliances-title,
+.category #Hardware .Hardware-title,
+.category #IOT .IOT-title,
+.category #parts .parts-title{
+    height: 48px;
+    padding-top: 60px;
+}
+.category #washing .washing-title h3 img,
+.category #iphone .iphone-title h3 img{
+    vertical-align: middle;
+}
+.category #appliances .appliances-title h3 img,
+.category #Hardware .Hardware-title h3 img,
+.category #IOT .IOT-title h3 img,
+.category #parts .parts-title h3 img{
+    vertical-align: middle;
+}
+
+.category #washing .washing-title h3 a,
+.category #iphone .iphone-title h3 a,
+.category #appliances .appliances-title h3 a,
+.category #Hardware .Hardware-title h3 a,
+.category #IOT .IOT-title h3 a,
+.category #parts .parts-title h3 a{
+    font-size: 22px;
+    color: #767676;
+}
+.category #washing .washing-title h3 a:hover,
+.category #iphone .iphone-title h3 a:hover,
+.category #appliances .appliances-title h3 a:hover,
+.category #Hardware .Hardware-title h3 a:hover,
+.category #IOT .IOT-title h3 a:hover,
+.category #parts .parts-title h3 a:hover{
+    color: #000;
+}
+.category #washing .washing-title .title-select,
+.category #iphone .iphone-title .title-select,
+.category #appliances .appliances-title .title-select,
+.category #Hardware .Hardware-title .title-select,
+.category #IOT .IOT-title .title-select,
+.category #parts .parts-title .title-select{
+    float: right;
+    margin-top:-20px;
+}
+.category #washing .washing-title .title-select li,
+.category #iphone .iphone-title .title-select li,
+.category #appliances .appliances-title .title-select li,
+.category #Hardware .Hardware-title .title-select li,
+.category #IOT .IOT-title .title-select li,
+.category #parts .parts-title .title-select li{
+    float: left;
+    margin-left: 5px;
+}
+.category #washing .washing-title .title-select li a,
+.category #iphone .iphone-title .title-select li a,
+.category #appliances .appliances-title .title-select li a,
+.category #Hardware .Hardware-title .title-select li a,
+.category #IOT .IOT-title .title-select li a,
+.category #parts .parts-title .title-select li a{
+    font-size: 13px;
+    color: #000;
+}
+.category #washing .washing-title .title-select li a:hover,
+.category #iphone .iphone-title .title-select li a:hover,
+.category #appliances .appliances-title .title-select li a:hover,
+.category #Hardware .Hardware-title .title-select li a:hover,
+.category #IOT .IOT-title .title-select li a:hover,
+.category #parts .parts-title .title-select li a:hover{
+    color: #ff5b57;
+}
+.category #washing .washing-title .title-select li:nth-child(7) a,
+.category #iphone .iphone-title .title-select li:nth-child(7) a,
+.category #iphone .Hardware-title .title-select li:nth-child(7) a,
+.category #IOT .IOT-title .title-select li:nth-child(7) a{
+    color: #ff5b57;
+}
+.category #appliances .appliances-title .title-select li:nth-child(9) a{
+    color: #ff5b57;
+}
+.category #parts .parts-title .title-select li:nth-child(5) a{
+    color: #ff5b57;
+}
+.category #washing .washing-bigimg,
+.category #iphone .iphone-bigimg,
+.category #appliances .appliances-bigimg,
+.category #Hardware .Hardware-bigimg,
+.category #IOT .IOT-bigimg,
+.category #parts .parts-bigimg{
+    height: 372px;
+}
+.category #washing .washing-goods,
+.category #iphone .iphone-goods,
+.category #appliances .appliances-goods,
+.category #Hardware .Hardware-goods,
+.category #IOT .IOT-goods,
+.category #parts .parts-goods{
+    height: 698px;
+}
+.category #washing .washing-goods div,
+.category #iphone .iphone-goods div,
+.category #appliances .appliances-goods div,
+.category #Hardware .Hardware-goods div,
+.category #IOT .IOT-goods div,
+.category #parts .parts-goods div{
+    height: 340px;
+    width: 272px;
+    background: #fff;
+    margin:19px 14px 0 0;
+    float: left;
+    text-align: center;
+}
+.category #washing .washing-goods div:nth-child(4),
+.category #iphone .iphone-goods div:nth-child(4),
+.category #appliances .appliances-goods div:nth-child(4),
+.category #Hardware .Hardware-goods div:nth-child(4),
+.category #IOT .IOT-goods div:nth-child(4),
+.category #parts .parts-goods div:nth-child(4){
+    float: right;
+    margin-right: 0px;
+}
+.category #washing .washing-goods div img,
+.category #iphone .iphone-goods div img,
+.category #appliances .appliances-goods div img,
+.category #Hardware .Hardware-goods div img,
+.category #IOT .IOT-goods div img,
+.category #parts .parts-goods div img{
+    margin:30px 0 20px 0;
+}
+.category #washing .washing-goods div img,
+.category #appliances .appliances-goods div img,
+.category #Hardware .Hardware-goods div img,
+.category #parts .parts-goods div img{
+    width: 200px;
+    height: 192px;
+}
+.category #washing .washing-goods div h3,
+.category #iphone .iphone-goods div h3,
+.category #appliances .appliances-goods div h3,
+.category #Hardware .Hardware-goods div h3,
+.category #IOT .IOT-goods div h3,
+.category #parts .parts-goods div h3{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+.category #washing .washing-goods div p,
+.category #iphone .iphone-goods div p,
+.category #appliances .appliances-goods div p,
+.category #Hardware .Hardware-goods div p,
+.category #IOT .IOT-goods div p,
+.category #parts .parts-goods div p{
+    font-size: 13px;
+    color: #989898;
+    margin-bottom: 12px;
+}
+.category #washing .washing-goods div span,
+.category #iphone .iphone-goods div span,
+.category #appliances .appliances-goods div span,
+.category #Hardware .Hardware-goods div span,
+.category #IOT .IOT-goods div span,
+.category #parts .parts-goods div span{
+    font-size: 13px;
+}
+.category #washing .washing-goods div span:nth-child(4),
+.category #iphone .iphone-goods div span:nth-child(4),
+.category #appliances .appliances-goods div span:nth-child(4),
+.category #Hardware .Hardware-goods div span:nth-child(4),
+.category #IOT .IOT-goods div span:nth-child(4),
+.category #parts .parts-goods div span:nth-child(4){
+    color: #ed1c24;
+}
+.category #washing .washing-goods div span:nth-child(5),
+.category #iphone .iphone-goods div span:nth-child(5),
+.category #appliances .appliances-goods div span:nth-child(5),
+.category #IOT .IOT-goods div span:nth-child(5),
+.category #parts .parts-goods div span:nth-child(5){
+    color: #989898;
+    text-decoration: line-through;
+}
+.category #washing .washing-goods div:hover,
+.category #iphone .iphone-goods div:hover,
+.category #appliances .appliances-goods div:hover,
+.category #Hardware .Hardware-goods div:hover,
+.category #IOT .IOT-goods div:hover,
+.category #parts .parts-goods div:hover{
+    box-shadow: 0 5px 10px #333;
+    transition: all 0.5s; 
+    margin-top: 17px;
+}
+/* 康佳新闻、康佳社区 ***************************************************************/
+.konka_bg{
+    width:100%;
+    background: #f7f7f7;
+}
+.konka{
+    height: 830px;
+}
+.konka .new,
+.konka .BBS{
+    height: 350px;
+    padding-top: 40px;
+}
+.konka .new .new-title a,
+.konka .BBS .BBS-title a{
+    font-size: 22px;
+    color: #767676; 
+}
+.konka .new .new-title a:hover,
+.konka .BBS .BBS-title a:hover{
+    color: #000;
+}
+.konka .new .new-title img,
+.konka .BBS .BBS-title img{
+    vertical-align: middle;
+}
+.konka .new .new-list{
+    margin-top: 10px;
+}
+.konka .BBS .BBS-list{
+    margin-top: 7px;
+}
+.konka .new .new-list div,
+.konka .BBS .BBS-list div{
+    width: 270px;
+    height: 300px;
+    background: #fff;
+    float: left;
+    margin-right: 18px;
+}
+.konka .new .new-list div:nth-child(4),
+.konka .BBS .BBS-list div:nth-child(4){
+    float: right;
+    margin-right: 0px;
+}
+.konka .new .new-list div h3,
+.konka .BBS .BBS-list div h3{
+    line-height: 40px;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #333;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.konka .new .new-list div p,
+.konka .BBS .BBS-list div p{
+    padding: 0 10px;
+    font-size: 12px;
+    color: #b0b0b0;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 20px;
+    text-overflow: -ms-ellipsis-lastline;
+    display: -ms-box;
+    -ms-line-clamp: 2;
+    -ms-box-orient: vertical;
+    height: 38px;
+    margin-bottom: 10px;
+}
+.konka .new .new-list div span,
+.konka .BBS .BBS-list div span{
+    padding: 0 10px;
+    color: #4b98ec;
+    font-size: 12px;
+}
+
+/* 尾部 ***********************************************/
+.site-footer{
+    height: 535px;
+}
+.site-footer .site-top{
+    height: 54px;
+    padding: 40px 0 20px 0;
+    border-bottom:1px solid #b2b2b2; 
+}
+.site-footer .site-top ul{
+    height: 54px;
+}
+.site-footer .site-top ul li{
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+}
+.site-footer .site-top ul li img{
+    float: left;
+}
+.site-footer .site-top ul li div{
+    float: left;
+    color: #b2b2b2;
+}
+.site-footer .site-top ul li img{
+    margin: 12px 12px 0 0;
+    vertical-align: middle;
+}
+.site-footer .site-top ul li div h4{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-bottom: 5px
+}
+.site-footer .site-top ul li div small{
+    font-size: 85%;
+}
+.site-footer .site-bottom{
+    height: 320px;
+    padding: 50px 0;
+}
+.site-footer .site-bottom dl{
+    float: left;
+    width: 140px;
+    margin-bottom: 20px;
+}
+.site-footer .site-bottom dl dt{
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.site-footer .site-bottom dl dd{
+    line-height: 35px;
+    font-size: 12px;
+}
+.site-footer .site-bottom dl dd a{
+    color: #767676;
+}
+.site-footer .site-bottom dl dd a:hover{
+    color: #ed1c24;
+}
+.site-footer .site-bottom .bottom-num{
+    border-left: 1px solid #eaeaea;
+    width: 250px;
+    height: 125px;
+    float: right;
+    text-align: center;
+}
+.site-footer .site-bottom .bottom-num p:nth-child(1){
+    font-size: 14px;
+    color: #6f6c71;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.site-footer .site-bottom .bottom-num p:nth-child(2){
+    color: #ff5d59;
+    font-size: 26px;
+    margin: 20px 0;
+}
+.site-footer .site-bottom .bottom-num span a{
+    color: #ff5d59;
+    font-size: 14px;
+}
+.site-footer .site-bottom .bottom-num span:nth-child(3){
+    border: 1px solid #ff5d59;
+    padding: 5px 10px;
+}
+.site-footer .site-bottom .bottom-num span:nth-child(4){
+    border: 1px solid #ff5d59;
+    padding: 5px 10px;
+}
+
+.for-footer_bg{
+    background: #313131;
+    width: 100%;
+}
+.for-footer{
+    height: 100px;
+    background: #313131;
+}
+.for-footer img{
+    float: left;
+    margin-top: 40px;
+}
+.for-footer ul{
+    float: right;
+}
+.for-footer ul li{
+    float: left;
+    font-size: 12px;
+    line-height: 100px;
+    color: #666;
+    margin-left: 5px;
+}
+.for-footer ul li a{
+    color: #666;
+}
+.for-footer ul li a:hover{
+    color: #fff;
+}
+
+.for-theme{
+    height: 72px;
+    text-align: center;
+}
