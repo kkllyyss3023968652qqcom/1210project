@@ -1,0 +1,221 @@
+header,nav,.container-goodslist,.sort,.index-banner,.home-selling,.category,.konka,.site-footer,.for-footer,.for-theme{
+    width: 1142px;
+    margin: 0 auto;
+}
+body{
+    background: #f7f7f7;
+}
+/* 头部************************************************************** */
+header{
+    height: 38px;
+    background:#333;
+}
+.header_bg{
+    width: 100%;
+    background:#333;
+}
+header .header_left{
+    float: left;
+}
+header .header_right{
+    float: right;
+}
+header ul li{
+    float: left;
+    line-height: 38px;
+    color: #b0b0b0;
+    font-size: 12px;
+    
+}
+header .header_left li{
+    margin-right: 10px;
+}
+header .header_right li{
+    margin-left: 10px;
+}
+header ul li a{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+header .header_right li:nth-child(4){
+    width: 115px;
+    background: #424242;
+    text-align: center
+}
+header .header_right li:nth-child(4) img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* 导航栏 **************************************************************/
+.nav_bg{
+    width: 100%;
+    background: #f4f4f4;
+    height: 50px;
+    position: relative;
+    
+    margin-bottom: 86px;
+}
+nav{
+    height: 50px;
+    background: #f4f4f4;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 1px;
+    position: absolute;
+    left: 104px;
+    z-index: 25;
+}
+nav ul li{
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+nav ul li:nth-child(1){
+    width: 162px;
+    height: 42px;
+    padding-top: 8px;
+}
+nav ul li:nth-child(13) a{
+    padding-top: 5px;
+    height: 45px;
+}
+nav ul li:nth-child(13) a:hover{
+    height: 45px;
+}
+nav ul li a{
+    display: block;
+    height: 50px;
+    width: 72px;
+    color: #939393;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    background:#fff;
+    height: 50px;
+    width: 72px;
+    color: #ed1c24;
+}
+
+
+.sort{
+    height: 40px;
+    background: #eee;
+}
+
+
+
+
+
+.container-goodslist{
+    position: relative;
+    background: #f7f7f7;
+    margin-top: 18px;
+}
+.container-goodslist::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container-goodslist .goods-box{
+    width: 270px;
+    height: 340px;
+    background: #fff;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    margin-right: 20px;
+    margin-top: 20px;
+    position: relative;
+    
+}
+.container-goodslist .goods-box:nth-child(4n){
+    margin-right: 0;
+}
+.container-goodslist .goods-box:hover{
+    box-shadow: 0 7px 7px #939393;
+    transition: all 0.5s;
+}
+.container-goodslist .goods-box .good-image{
+    height: 200px;
+    width: 100%;
+    line-height: 200px;
+    font-size: 0;
+}
+.container-goodslist .goods-box .good-image img{
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+.container-goodslist .goods-box h4{
+    line-height: 35px;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    padding: 0 10px;
+}
+.container-goodslist .goods-box p{
+    color: #989898;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: inherit;
+    text-overflow: ellipsis;
+    height: 47px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 22px;
+}
+.container-goodslist .goods-box span{
+    color: #da2a2a;
+}
+.container-goodslist .goods-box .wrapper{
+    width: 270px;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    padding: 10px 15px;
+    display: none;
+    
+}
+.container-goodslist .goods-box .wrapper a{
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    outline: none;
+}
+.container-goodslist .goods-box .wrapper a:first-child{
+    border: 1px solid #ed1c24;
+    color: #ed1c24;
+}
+.container-goodslist .goods-box .wrapper a:last-child{
+    background: #ed1c24;
+    border: 1px solid #ed1c24;
+    color: #fff;
+}
+.container-goodslist .goods-box .wrapper .btn{
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    background-image: none;
+    border-radius: 2px;
+}
+.container-goodslist .goods-box:hover .wrapper{
+    display: block;
+    transition: 0.5s;
+}
+.container-goodslist .goods-box:hover span{
+    display: none;
+}
+
+
+
