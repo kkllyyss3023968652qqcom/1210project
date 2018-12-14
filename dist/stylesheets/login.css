@@ -1,0 +1,325 @@
+header,nav,.index-banner,.home-selling,.category,.konka,.site-footer,.for-footer,.for-theme{
+    width: 1142px;
+    margin: 0 auto;
+}
+/* 头部 */
+header{
+    height: 38px;
+    background:#333;
+}
+.header_bg{
+    width: 100%;
+    background:#333;
+}
+header .header_left{
+    float: left;
+}
+header .header_right{
+    float: right;
+}
+header ul li{
+    float: left;
+    line-height: 38px;
+    color: #b0b0b0;
+    font-size: 12px;
+    
+}
+header .header_left li{
+    margin-right: 10px;
+}
+header .header_right li{
+    margin-left: 10px;
+}
+header ul li a{
+    color: #b0b0b0;
+    font-size: 12px;
+}
+header .header_right li:nth-child(4){
+    width: 115px;
+    background: #424242;
+    text-align: center
+}
+header .header_right li:nth-child(4) img{
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+/* 导航 */
+
+nav{
+    height: 50px;
+    background: #f4f4f4;
+    box-shadow: 0 0 10px black;
+    margin-bottom: 1px;
+    position: absolute;
+    left: 104px;
+    z-index: 25;
+}
+nav ul li{
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+nav ul li:nth-child(1){
+    width: 162px;
+    height: 42px;
+    padding-top: 8px;
+}
+nav ul li:nth-child(13) a{
+    padding-top: 5px;
+    height: 45px;
+}
+nav ul li:nth-child(13) a:hover{
+    height: 45px;
+}
+nav ul li a{
+    display: block;
+    height: 50px;
+    width: 72px;
+    color: #939393;
+    font-size: 14px;
+}
+nav ul li a:hover{
+    background:#fff;
+    height: 50px;
+    width: 72px;
+    color: #ed1c24;
+}
+.main-container{
+    height: 588px;
+    width: 100%;
+    background: url(https://www.konka.com/public/images/e9/03/07/4a427d22fd77fd3b6c265fed6ca3419f0888499b.jpg) no-repeat;
+    background-size:100% 100%;
+    position: relative;
+}
+.main-container .login-width{
+    width: 450px;
+    height: 314px;
+    background: #fff;
+    position: absolute;
+    top:100px;
+    right: 120px;
+}
+.main-container .login-width .login-title{
+    height: 43px;
+    border-bottom: 1px solid #dddddd;
+    background: #f5f5f5;
+}
+.main-container .login-width .login-title h3{
+    float: left;
+    line-height: 43px;
+    font-size: 13px;
+    margin-left: 15px;
+    color: #333;
+}
+
+.main-container .login-width .login-title a{
+    float: right;
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 1px;
+    color: #fff;
+    background-color: #f99e1e;
+    border-color: #f79307;
+    margin: 10px 10px 0 0;
+}
+.main-container .login-width .login-title a:hover{
+    background: #c57b14;
+}
+.main-container .login-body .form .name,
+.main-container .login-body .form .pass{
+    height: 35px;
+    padding-left: 32px;
+    width: 418px;
+    margin-top: 15px;
+}
+.main-container .login-body .form .name p,.main-container .login-body form .name input,
+.main-container .login-body .form .pass p,.main-container .login-body form .pass input,
+.main-container .login-body .form .code p,.main-container .login-body form .code input{
+    float: left;
+}
+.main-container .login-body .form .name p,
+.main-container .login-body .form .pass p,
+.main-container .login-body .form .code p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+    line-height: 35px;
+    margin-right: 30px;
+}
+.main-container .login-body .form .name input,
+.main-container .login-body .form .pass input{
+    height: 33px;
+    width: 341px;
+}
+.main-container .login-body .form .code input{
+    height: 33px;
+    width: 154px;
+}
+.main-container .login-body .form .code{
+    height: 35px;
+    padding-left: 18px;
+    width: 428px;
+    margin-top: 15px;
+}
+.main-container .login-body .form .group{
+    height: 35px;
+    padding-left: 90px;
+    width: 360px;
+    margin-top: 25px;
+}
+.main-container .login-body .form .group .zidong{
+    font-size: 13px;
+    color: #333;
+    float: left;
+}
+.main-container .login-body .form .group .forget a{
+    float: right;
+    font-size: 13px;
+    color: #767676;
+    margin-right: 17px;
+}
+.main-container .login-body .form .group .forget a:hover{
+    color: #000;
+}
+.main-container .login-body .form .login-btn #btn{
+    width: 54px;
+    height: 34px;
+    background: #c13e2c;
+    color: #fff;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+}
+.main-container .login-body .form .login-btn{
+    height: 35px;
+    padding-left: 90px;
+    width: 360px;
+}
+/* 尾部 ***********************************************/
+.site-footer{
+    height: 535px;
+}
+.site-footer .site-top{
+    height: 54px;
+    padding: 40px 0 20px 0;
+    border-bottom:1px solid #b2b2b2; 
+}
+.site-footer .site-top ul{
+    height: 54px;
+}
+.site-footer .site-top ul li{
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+}
+.site-footer .site-top ul li img{
+    float: left;
+}
+.site-footer .site-top ul li div{
+    float: left;
+    color: #b2b2b2;
+}
+.site-footer .site-top ul li img{
+    margin: 12px 12px 0 0;
+    vertical-align: middle;
+}
+.site-footer .site-top ul li div h4{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-bottom: 5px
+}
+.site-footer .site-top ul li div small{
+    font-size: 85%;
+}
+.site-footer .site-bottom{
+    height: 320px;
+    padding: 50px 0;
+}
+.site-footer .site-bottom dl{
+    float: left;
+    width: 140px;
+    margin-bottom: 20px;
+}
+.site-footer .site-bottom dl dt{
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.site-footer .site-bottom dl dd{
+    line-height: 35px;
+    font-size: 12px;
+}
+.site-footer .site-bottom dl dd a{
+    color: #767676;
+}
+.site-footer .site-bottom dl dd a:hover{
+    color: #ed1c24;
+}
+.site-footer .site-bottom .bottom-num{
+    border-left: 1px solid #eaeaea;
+    width: 250px;
+    height: 125px;
+    float: right;
+    text-align: center;
+}
+.site-footer .site-bottom .bottom-num p:nth-child(1){
+    font-size: 14px;
+    color: #6f6c71;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.site-footer .site-bottom .bottom-num p:nth-child(2){
+    color: #ff5d59;
+    font-size: 26px;
+    margin: 20px 0;
+}
+.site-footer .site-bottom .bottom-num span a{
+    color: #ff5d59;
+    font-size: 14px;
+}
+.site-footer .site-bottom .bottom-num span:nth-child(3){
+    border: 1px solid #ff5d59;
+    padding: 5px 10px;
+}
+.site-footer .site-bottom .bottom-num span:nth-child(4){
+    border: 1px solid #ff5d59;
+    padding: 5px 10px;
+}
+
+.for-footer_bg{
+    background: #313131;
+    width: 100%;
+}
+.for-footer{
+    height: 100px;
+    background: #313131;
+}
+.for-footer img{
+    float: left;
+    margin-top: 40px;
+}
+.for-footer ul{
+    float: right;
+}
+.for-footer ul li{
+    float: left;
+    font-size: 12px;
+    line-height: 100px;
+    color: #666;
+    margin-left: 5px;
+}
+.for-footer ul li a{
+    color: #666;
+}
+.for-footer ul li a:hover{
+    color: #fff;
+}
+
+.for-theme{
+    height: 72px;
+    text-align: center;
+}

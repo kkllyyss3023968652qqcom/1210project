@@ -1,0 +1,26 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.7.0"
+  },
+  "scripts": {
+    "gulp": "node ./node_modules/gulp/bin/gulp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kkllyyss3023968652qqcom/1210project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kkllyyss3023968652qqcom/1210project/issues"
+  },
+  "homepage": "https://github.com/kkllyyss3023968652qqcom/1210project#readme"
+}

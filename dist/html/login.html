@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>注册成为会员</title>
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/register.css">
+    <title>会员登录</title>
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
 <body>
         <div class="header_bg">
@@ -25,9 +25,9 @@
                     <li><a href="">积分商城</a></li>
                 </ul>
                 <ul class="header_right">
-                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="login.html">登录</a></li>
                     <li>|</li>
-                    <li><a href="./register.html">注册</a></li>
+                    <li><a href="register.html">注册</a></li>
                     <li><a href=""><img src="https://www.konka.com/themes/pc/konka/images/top-header-cart.png?v59e0" alt=""> 购物车(0)</a></li>
                 </ul>
             </header>
@@ -36,17 +36,17 @@
         <nav>
             <ul>
                 <li><img src="https://www.konka.com/themes/pc/konka/images/logo.png?v846d" alt=""></li>
-                <li><a href="">首页</a></li>
-                <li><a href="">电视</a></li>
-                <li><a href="">冰箱</a></li>
-                <li><a href="">洗衣机</a></li>
-                <li><a href="">手机</a></li>
-                <li><a href="">生活电器</a></li>
-                <li><a href="">智能家居</a></li>
-                <li><a href="">智能硬件</a></li>
-                <li><a href="">k迷优品</a></li>
-                <li><a href="">大宗采购</a></li>
-                <li><a href="">服务</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="list.html">电视</a></li>
+                <li><a href="list.html">冰箱</a></li>
+                <li><a href="list.html">洗衣机</a></li>
+                <li><a href="list.html">手机</a></li>
+                <li><a href="list.html">生活电器</a></li>
+                <li><a href="list.html">智能家居</a></li>
+                <li><a href="list.html">智能硬件</a></li>
+                <li><a href="list.html">k迷优品</a></li>
+                <li><a href="list.html">大宗采购</a></li>
+                <li><a href="list.html">服务</a></li>
                 <li><a href=""><img src="https://www.konka.com/themes/pc/konka/images/header-scrae.png?v846d" alt=""></a></li>
             </ul>
         </nav>
@@ -54,48 +54,35 @@
         <div class="main-container">
             <div class="login-width">
                 <div class="login-title">
-                    <h3>注册成为会员</h3>
-                    <a href="login.html">立即登录></a>
+                    <h3>会员登录</h3>
+                    <a href="register.html">立即注册成为会员></a>
                 </div>
                 <div class="login-body">
-                    <form action="kangjia.html">
+                    <div class="form">
                         <div class="name">
-                            <p>登录账号<span>*</span></p>
-                            <input type="text" id="user" placeholder="手机号/邮箱">
-                            <div class="errUser">
-                                <span>请输入正确格式的手机号或邮箱！</span>
-                            </div>
+                            <p>账号</p>
+                            <input type="text" id="username" placeholder="手机号/邮箱/用户名">
                         </div>
                         <div class="pass">
-                            <p>登录密码<span>*</span></p>
-                            <input type="text" id="pwd" placeholder="登录密码">
-                            <div class="errPwd">
-                                <span>请输入数字字母特殊符号至少两种组成的6~20位密码！</span>
-                            </div>
-                        </div>
-                        <div class="pass-yes">
-                            <p>确认密码<span>*</span></p>
-                            <input type="text" id="pwd-yes" placeholder="再次输入登录密码">
-                            <div class="errPwd2">
-                                <span>两次输入密码不相同！</span>
-                            </div>
+                            <p>密码</p>
+                            <input type="text" id="password" placeholder="登录密码">
                         </div>
                         <div class="code">
-                            <p>验证码<span>*</span></p>
+                            <p>验证码</p>
                             <input type="text" id="" placeholder="验证码">
                         </div>
                         <div class="group">
                             <div class="zidong">
-                                <input type="checkbox">同意<a href="">《会员注册条款》</a> 
+                                <input type="checkbox">自动登录
                             </div>
                             <div class="forget">
                                 <a href="">忘记密码？</a>
                             </div>                            
                         </div>
                         <div class="login-btn">
-                            <button id="btn" type="submit">提交</button>
+                            <button id="btn" type="submit">登录</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -223,94 +210,23 @@
              <a href=""><img src="https://www.konka.com/themes/pc/konka/images/cert.gif?v59e0" alt=""></a> 
          </div>
 </body>
+<script src="../javascripts/cookie.js"></script>
 <script>
-    var regUser=/^1[0-9]{10}$/;
-    var regEmail=/^[0-9a-z][0-9a-z_]{5,12}@[0-9a-z]{2,10}\.[a-z]{2,5}$/;
-    var oUser=document.getElementById("user");
-    var oErrUser=document.querySelector(".errUser span");
-    oUser.onblur=function(){
-        var sUser=oUser.value;
-        if(regUser.test(sUser) || regEmail.test(sUser)){
-            oErrUser.style.display="none";
-        }
-        else{
-            oErrUser.style.display="block";
-        }
-    }
-
-    var oPwd = document.getElementById("pwd");
-    var oErrPwd=document.querySelector(".errPwd span");
-    var regPwd = /^[a-z0-9\!\@\#\$\%\^\&\*\(\)\_]{6,20}$/;
-        oPwd.onblur = function(){
-            var sPwd = oPwd.value;
-            if(regPwd.test(sPwd)){
-                var rate = 0;
-                var regNum = /\d/;
-                var regWord = /[a-z]/;
-                var regSymbol = /[\!\@\#\$\%\^\&\*\(\)\_]/;
-                
-                if(regNum.test(sPwd)){
-                    rate++;
+        var oUser=document.getElementById("username")
+        var oPass=document.getElementById("password")
+        var oBtn=document.getElementById("btn")
+        oBtn.onclick = function(){
+            // console.log(1)
+            var sUser = oUser.value;
+            var sPass = oPass.value;
+            if(getCookie("user")== oUser.value && getCookie("pass")==oPass.value){
+                    // getCookie("phone",sPhone)
+                    location.href = "../index.html";
                 }
-                if(regWord.test(sPwd)){
-                    rate++;
+                else{
+                    alert("登录失败");
                 }
-                if(regSymbol.test(sPwd)){
-                    rate++;
-                }
-            
-                switch(rate){
-                    case 1:
-                        oErrPwd.style.display="none";
-                        alert("账号存在被盗风险,请更改安全度较高的代码");
-                        break;
-                    case 2:
-                        oErrPwd.style.display="none";
-                        break;
-                    case 3:
-                        oErrPwd.style.display="none";
-                        break;
-                }   
-            }else{
-                oErrPwd.style.display="block";
-            }
         }
 
-    var oPwd2 = document.getElementById("pwd-yes");
-    var oErrPwd2=document.querySelector(".errPwd2 span");
-    oPwd2.onblur = function(){
-        var sPwd2 = oPwd2.value;
-        var sPwd = oPwd.value;
-        if(regPwd.test(sPwd2) &&sPwd2 ==sPwd){
-                var rate = 0;
-                var regNum = /\d/;
-                var regWord = /[a-z]/;
-                var regSymbol = /[\!\@\#\$\%\^\&\*\(\)\_]/;
-                
-                if(regNum.test(sPwd2)){
-                    rate++;
-                }
-                if(regWord.test(sPwd2)){
-                    rate++;
-                }
-                if(regSymbol.test(sPwd2)){
-                    rate++;
-                }
-            
-                switch(rate){
-                    case 1:
-                        oErrPwd2.style.display="none";
-                        break;
-                    case 2:
-                        oErrPwd2.style.display="none";
-                        break;
-                    case 3:
-                        oErrPwd2.style.display="none";
-                        break;
-                }   
-            }else{
-                oErrPwd2.style.display="block";
-            }
-    }
-</script>
+    </script>
 </html>

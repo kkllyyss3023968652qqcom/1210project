@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/list.css">
+</head>
+<body>
+    <!-- 头部，登录、注册、购物车 -->
+    <div class="header_bg">
+            <header>
+                <ul class="header_left">
+                    <li><a href="">康佳新闻</a></li>
+                    <li>|</li>
+                    <li><a href="">加入康佳</a></li>
+                    <li>|</li>
+                    <li><a href="">校园招聘</a></li>
+                    <li>|</li>
+                    <li><a href="">康佳社区</a></li>
+                    <li>|</li>
+                    <li><a href="">大宗采购</a></li>
+                    <li>|</li>
+                    <li><a href="">积分商城</a></li>
+                </ul>
+                <ul class="header_right">
+                    <li><a href="login.html">登录</a></li>
+                    <li>|</li>
+                    <li><a href="register.html">注册</a></li>
+                    <li class="car-item">
+                        <a href="">
+                            <img src="https://www.konka.com/themes/pc/konka/images/top-header-cart.png?v59e0" alt="">
+                             购物车<strong id="num">0</strong>
+                             <div class="car-list">
+                                <ul>
+                                      
+                                    
+                                </ul>
+                                <button id="clear">清空购物车</button>
+                            </div>
+                            
+                        </a>
+                    </li>
+                   
+                    
+                    
+                </ul>
+            </header>
+    </div>
+    
+    <!-- 导航栏 -->
+    <div class="nav_bg">
+        <nav>
+            <ul>
+                <li><img src="https://www.konka.com/themes/pc/konka/images/logo.png?v846d" alt=""></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="list.html">电视</a></li>
+                <li><a href="list.html">冰箱</a></li>
+                <li><a href="list.html">洗衣机</a></li>
+                <li><a href="list.html">手机</a></li>
+                <li><a href="list.html">生活电器</a></li>
+                <li><a href="list.html">智能家居</a></li>
+                <li><a href="list.html">智能硬件</a></li>
+                <li><a href="list.html">k迷优品</a></li>
+                <li><a href="list.html">大宗采购</a></li>
+                <li><a href="list.html">服务</a></li>
+                <li><a href=""><img src="https://www.konka.com/themes/pc/konka/images/header-scrae.png?v846d" alt=""></a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <!-- 排序 -->
+    <div class="sort">
+        <ul>
+            <li><a id="one_a" href="">默认</a></li>
+            <li><a href="">价格</a></li>
+            <li><a href="">销量▲</a></li>
+            <li><a href="">好评▲</a></li>
+            <li><a href="">最新</a></li>
+        </ul>
+    </div>
+    
+    <div class="container-goodslist">
+        <!--   盒子结构  start-->
+            <!-- <div class="goods-box">
+                    <div class="good-image">
+                        <img src="https://www.konka.com/public/images/6e/e8/63/712c24b1674570fb37d593e85221072f417098ff.jpg?24741_OW800_OH800g" alt="">
+                    </div>
+                    <h4>B50U 50吋36核 4K超高清</h4>
+                    <p>金属机身 人工智能 全民K歌</p>
+                    <span>￥1899.00</span>
+                    <div class="wrapper">
+                        <a href="" type="button" class="btn">加入购物车</a>
+                        <a href="" type="button" class="btn">立即购买</a>
+                    </div>
+                </div> -->
+        <!--   盒子结构  end-->
+        </div>
+        <div class="container-goodslist2">
+            <!--   盒子结构  start-->
+                <!-- <div class="goods-box">
+                        <div class="good-image">
+                            <img src="https://www.konka.com/public/images/6e/e8/63/712c24b1674570fb37d593e85221072f417098ff.jpg?24741_OW800_OH800g" alt="">
+                        </div>
+                        <h4>B50U 50吋36核 4K超高清</h4>
+                        <p>金属机身 人工智能 全民K歌</p>
+                        <span>￥1899.00</span>
+                        <div class="wrapper">
+                            <a href="" type="button" class="btn">加入购物车</a>
+                            <a href="" type="button" class="btn">立即购买</a>
+                        </div>
+                    </div> -->
+            <!--   盒子结构  end-->
+            </div>
+
+</body>
+<script src="../javascripts/jquery.js"></script>
+<script src="../javascripts/common.js"></script>
+<script src="../javascripts/list.js"></script>
+<script src="../javascripts/shopcart.js"></script>
+<script src="../javascripts/jump.js"></script>
+<script>
+    var one_a=document.getElementById("one_a");
+    one_a.onmouseout=function(){
+        one_a.style.color="#333";
+        one_a.style.background="#eee";
+        one_a.style.borderTop="none";
+    }
+    one_a.onmouseenter=function(){
+        one_a.style.color="#da2a2a";
+        one_a.style.background="#fff";
+        one_a.style.borderTopColor="#da2a2a";
+        one_a.style.borderTopStyle="solid";
+    }
+</script>
+</html>

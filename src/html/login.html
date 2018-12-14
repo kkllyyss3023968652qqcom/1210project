@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>会员登录</title>
-    <link rel="stylesheet" href="stylesheets/reset.css">
-    <link rel="stylesheet" href="stylesheets/login.css">
+    <link rel="stylesheet" href="../stylesheets/reset.css">
+    <link rel="stylesheet" href="../stylesheets/login.css">
 </head>
 <body>
         <div class="header_bg">
@@ -25,9 +25,9 @@
                     <li><a href="">积分商城</a></li>
                 </ul>
                 <ul class="header_right">
-                    <li><a href="./login.html">登录</a></li>
+                    <li><a href="login.html">登录</a></li>
                     <li>|</li>
-                    <li><a href="./register.html">注册</a></li>
+                    <li><a href="register.html">注册</a></li>
                     <li><a href=""><img src="https://www.konka.com/themes/pc/konka/images/top-header-cart.png?v59e0" alt=""> 购物车(0)</a></li>
                 </ul>
             </header>
@@ -36,17 +36,17 @@
         <nav>
             <ul>
                 <li><img src="https://www.konka.com/themes/pc/konka/images/logo.png?v846d" alt=""></li>
-                <li><a href="">首页</a></li>
-                <li><a href="">电视</a></li>
-                <li><a href="">冰箱</a></li>
-                <li><a href="">洗衣机</a></li>
-                <li><a href="">手机</a></li>
-                <li><a href="">生活电器</a></li>
-                <li><a href="">智能家居</a></li>
-                <li><a href="">智能硬件</a></li>
-                <li><a href="">k迷优品</a></li>
-                <li><a href="">大宗采购</a></li>
-                <li><a href="">服务</a></li>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="list.html">电视</a></li>
+                <li><a href="list.html">冰箱</a></li>
+                <li><a href="list.html">洗衣机</a></li>
+                <li><a href="list.html">手机</a></li>
+                <li><a href="list.html">生活电器</a></li>
+                <li><a href="list.html">智能家居</a></li>
+                <li><a href="list.html">智能硬件</a></li>
+                <li><a href="list.html">k迷优品</a></li>
+                <li><a href="list.html">大宗采购</a></li>
+                <li><a href="list.html">服务</a></li>
                 <li><a href=""><img src="https://www.konka.com/themes/pc/konka/images/header-scrae.png?v846d" alt=""></a></li>
             </ul>
         </nav>
@@ -58,14 +58,14 @@
                     <a href="register.html">立即注册成为会员></a>
                 </div>
                 <div class="login-body">
-                    <form action="kangjia.html">
+                    <div class="form">
                         <div class="name">
                             <p>账号</p>
-                            <input type="text" id="" placeholder="手机号/邮箱/用户名">
+                            <input type="text" id="username" placeholder="手机号/邮箱/用户名">
                         </div>
                         <div class="pass">
                             <p>密码</p>
-                            <input type="text" id="" placeholder="登录密码">
+                            <input type="text" id="password" placeholder="登录密码">
                         </div>
                         <div class="code">
                             <p>验证码</p>
@@ -82,7 +82,7 @@
                         <div class="login-btn">
                             <button id="btn" type="submit">登录</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -210,4 +210,23 @@
              <a href=""><img src="https://www.konka.com/themes/pc/konka/images/cert.gif?v59e0" alt=""></a> 
          </div>
 </body>
+<script src="../javascripts/cookie.js"></script>
+<script>
+        var oUser=document.getElementById("username")
+        var oPass=document.getElementById("password")
+        var oBtn=document.getElementById("btn")
+        oBtn.onclick = function(){
+            // console.log(1)
+            var sUser = oUser.value;
+            var sPass = oPass.value;
+            if(getCookie("user")== oUser.value && getCookie("pass")==oPass.value){
+                    // getCookie("phone",sPhone)
+                    location.href = "../index.html";
+                }
+                else{
+                    alert("登录失败");
+                }
+        }
+
+    </script>
 </html>

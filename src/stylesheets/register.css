@@ -127,15 +127,15 @@ nav ul li a:hover{
 .main-container .login-width .login-title a:hover{
     background: #902b1d;
 }
-.main-container .login-body form .name,
-.main-container .login-body form .pass,
-.main-container .login-body form .pass-yes{
+.main-container .login-body .form .name,
+.main-container .login-body .form .pass,
+.main-container .login-body .form .pass-yes{
     height: 30px;
     padding-left: 32px;
     width: 418px;
     margin-top: 15px;
 }
-.main-container .login-body form .name .errUser{
+.main-container .login-body .form .name .errUser{
     height: 25px;
     position: absolute;
     z-index: 2;
@@ -144,14 +144,14 @@ nav ul li a:hover{
     background: #f99e1e;
     border-radius: 2px;
 }
-.main-container .login-body form .name .errUser span{
+.main-container .login-body .form .name .errUser span{
     font-size: 13px;
     color: #fff;
     font-weight: bold;
     line-height: 25px;
     display: none;
 }
-.main-container .login-body form .pass .errPwd{
+.main-container .login-body .form .pass .errPwd{
     height: 25px;
     position: absolute;
     z-index: 2;
@@ -160,14 +160,14 @@ nav ul li a:hover{
     background: #f99e1e;
     border-radius: 2px;
 }
-.main-container .login-body form .pass .errPwd span{
+.main-container .login-body .form .pass .errPwd span{
     font-size: 13px;
     color: #fff;
     font-weight: bold;
     line-height: 25px;
     display: none;
 }
-.main-container .login-body form .pass-yes .errPwd2{
+.main-container .login-body .form .pass-yes .errPwd2{
     height: 25px;
     position: absolute;
     z-index: 2;
@@ -176,79 +176,79 @@ nav ul li a:hover{
     background: #f99e1e;
     border-radius: 2px;
 }
-.main-container .login-body form .pass-yes .errPwd2 span{
+.main-container .login-body .form .pass-yes .errPwd2 span{
     font-size: 13px;
     color: #fff;
     font-weight: bold;
     line-height: 25px;
     display: none;
 }
-.main-container .login-body form .name p,.main-container .login-body form .name input,
-.main-container .login-body form .pass p,.main-container .login-body form .pass input,
-.main-container .login-body form .pass-yes p,.main-container .login-body form .pass-yes input,
-.main-container .login-body form .code p,.main-container .login-body form .code input{
+.main-container .login-body .form .name p,.main-container .login-body form .name input,
+.main-container .login-body .form .pass p,.main-container .login-body form .pass input,
+.main-container .login-body .form .pass-yes p,.main-container .login-body form .pass-yes input,
+.main-container .login-body .form .code p,.main-container .login-body form .code input{
     float: left;
 }
-.main-container .login-body form .name p,
-.main-container .login-body form .pass p,
-.main-container .login-body form .pass-yes p,
-.main-container .login-body form .code p{
+.main-container .login-body .form .name p,
+.main-container .login-body .form .pass p,
+.main-container .login-body .form .pass-yes p,
+.main-container .login-body .form .code p{
     font-size: 15px;
     font-weight: bold;
     color: #333;
     line-height: 35px;
     margin-right: 16px;
 }
-.main-container .login-body form .name p span,
-.main-container .login-body form .pass p span,
-.main-container .login-body form .pass-yes p span,
-.main-container .login-body form .code p span{
+.main-container .login-body .form .name p span,
+.main-container .login-body .form .pass p span,
+.main-container .login-body .form .pass-yes p span,
+.main-container .login-body .form .code p span{
     color:#b14442;
 }
-.main-container .login-body form .name input,
-.main-container .login-body form .pass input,
-.main-container .login-body form .pass-yes input{
+.main-container .login-body .form .name input,
+.main-container .login-body .form .pass input,
+.main-container .login-body .form .pass-yes input{
     height: 30px;
     width: 319px;
     position: relative;
 }
-.main-container .login-body form .code input{
+.main-container .login-body .form .code input{
     height: 30px;
     width: 154px;
 }
-.main-container .login-body form .code{
+.main-container .login-body .form .code{
     height: 30px;
     padding-left: 48px;
     width: 398px;
     margin-top: 15px;
 }
-.main-container .login-body form .group{
+.main-container .login-body .form .group{
     height: 30px;
     padding-left: 110px;
     width: 340px;
     margin-top: 23px;
 }
-.main-container .login-body form .group .zidong{
+.main-container .login-body .form .group .zidong{
     font-size: 13px;
     color: #333;
     float: left;
 }
-.main-container .login-body form .group .zidong a{
+.main-container .login-body .form .group .zidong a{
     color: #767676;
 }
-.main-container .login-body form .group .zidong a:hover{
+.main-container .login-body .form .group .zidong a:hover{
     color: #333;
 }
-.main-container .login-body form .group .forget a{
+.main-container .login-body .form .group .forget a{
     float: right;
     font-size: 13px;
     color: #767676;
     margin-right: 17px;
 }
-.main-container .login-body form .group .forget a:hover{
+.main-container .login-body .form .group .forget a:hover{
     color: #000;
 }
-.main-container .login-body form .login-btn #btn{
+.main-container .login-body .form .login-btn #btn{
     width: 54px;
     height: 30px;
     background: #f99e1e;
@@ -257,7 +257,7 @@ nav ul li a:hover{
     border: none;
     border-radius: 5px;
 }
-.main-container .login-body form .login-btn{
+.main-container .login-body .form .login-btn{
     height: 30px;
     padding-left: 110px;
     width: 340px;

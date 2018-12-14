@@ -1,4 +1,4 @@
-header,nav,.container-goodslist,.sort,.index-banner,.home-selling,.category,.konka,.site-footer,.for-footer,.for-theme{
+header,nav,.container-goodslist,.container-goodslist2,.sort,.index-banner,.home-selling,.category,.konka,.site-footer,.for-footer,.for-theme{
     width: 1142px;
     margin: 0 auto;
 }
@@ -40,13 +40,41 @@ header ul li a{
 header .header_right li:nth-child(4){
     width: 115px;
     background: #424242;
-    text-align: center
+    text-align: center;
+    position: relative;
 }
 header .header_right li:nth-child(4) img{
     width: 20px;
     height: 20px;
     vertical-align: middle;
 }
+
+header .header_right .car-list{
+    position: absolute;
+    z-index: 50;
+    background: #b0b0b0;
+    top: 40px;
+    width: 200px;
+    display: none;
+    color: #000
+}
+header .header_right .car-list li{
+    margin: 10px;
+    color: #000;
+    height: 50px;
+    width: 162px;
+    background: #b0b0b0;
+}
+header .header_right .car-list li span:nth-child(3){
+    color: #000;
+    margin-left: 30px;
+}
+header .header_right .car-list li img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
 
 /* 导航栏 **************************************************************/
 .nav_bg{
@@ -102,8 +130,33 @@ nav ul li a:hover{
     height: 40px;
     background: #eee;
 }
-
-
+.sort li{
+    float: left;
+}
+.sort a{
+    display: inline-block;
+    text-align: center;
+    background: none;
+    width: 80px;
+    line-height: 40px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    border-color: #ccc;
+}
+.sort ul li:nth-child(1) a{
+    border-top: 2px solid #da2a2a;
+    color: #da2a2a;
+    box-sizing: border-box;
+    background: #fff;
+}
+.sort a:hover{
+    border-top: 2px solid #da2a2a;
+    color: #da2a2a;
+    box-sizing: border-box;
+    background: #fff;
+    
+}
 
 
 
@@ -112,13 +165,20 @@ nav ul li a:hover{
     background: #f7f7f7;
     margin-top: 18px;
 }
-.container-goodslist::after{
+.container-goodslist2{
+    position: relative;
+    background: #f7f7f7;
+    margin-top: 18px;
+}
+.container-goodslist::after,
+.container-goodslist2::after{
     content: "";
     display: block;
     clear: both;
 }
 
-.container-goodslist .goods-box{
+.container-goodslist .goods-box,
+.container-goodslist2 .goods-box{
     width: 270px;
     height: 340px;
     background: #fff;
@@ -130,25 +190,28 @@ nav ul li a:hover{
     position: relative;
     
 }
-.container-goodslist .goods-box:nth-child(4n){
+.container-goodslist .goods-box:nth-child(4n),
+.container-goodslist2 .goods-box:nth-child(4n){
     margin-right: 0;
 }
-.container-goodslist .goods-box:hover{
+.container-goodslist .goods-box:hover,
+.container-goodslist2 .goods-box:hover{
     box-shadow: 0 7px 7px #939393;
     transition: all 0.5s;
 }
-.container-goodslist .goods-box .good-image{
+.container-goodslist .goods-box .good-image,
+.container-goodslist2 .goods-box .good-image{
     height: 200px;
     width: 100%;
     line-height: 200px;
-    font-size: 0;
 }
-.container-goodslist .goods-box .good-image img{
+.container-goodslist .goods-box .good-image img,
+.container-goodslist2 .goods-box .good-image img{
     max-width: 100%;
     max-height: 100%;
-    vertical-align: middle;
 }
-.container-goodslist .goods-box h4{
+.container-goodslist .goods-box h4,
+.container-goodslist2 .goods-box h4{
     line-height: 35px;
     margin-bottom: 0;
     white-space: nowrap;
@@ -157,7 +220,8 @@ nav ul li a:hover{
     font-size: 16px;
     padding: 0 10px;
 }
-.container-goodslist .goods-box p{
+.container-goodslist .goods-box p,
+.container-goodslist2 .goods-box p{
     color: #989898;
     font-size: 14px;
     overflow: hidden;
@@ -169,10 +233,12 @@ nav ul li a:hover{
     display: -webkit-box;
     line-height: 22px;
 }
-.container-goodslist .goods-box span{
+.container-goodslist .goods-box span,
+.container-goodslist2 .goods-box span{
     color: #da2a2a;
 }
-.container-goodslist .goods-box .wrapper{
+.container-goodslist .goods-box .wrapper,
+.container-goodslist2 .goods-box .wrapper{
     width: 270px;
     position: absolute;
     left: 0;
@@ -181,23 +247,28 @@ nav ul li a:hover{
     display: none;
     
 }
-.container-goodslist .goods-box .wrapper a{
+.container-goodslist .goods-box .wrapper button,
+.container-goodslist2 .goods-box .wrapper button{
     width: 90px;
     height: 30px;
     line-height: 30px;
     padding: 0;
     outline: none;
 }
-.container-goodslist .goods-box .wrapper a:first-child{
+.container-goodslist .goods-box .wrapper button:first-child,
+.container-goodslist2 .goods-box .wrapper button:first-child{
     border: 1px solid #ed1c24;
     color: #ed1c24;
+    background: #fff;
 }
-.container-goodslist .goods-box .wrapper a:last-child{
+.container-goodslist .goods-box .wrapper button:last-child,
+.container-goodslist2 .goods-box .wrapper button:last-child{
     background: #ed1c24;
     border: 1px solid #ed1c24;
     color: #fff;
 }
-.container-goodslist .goods-box .wrapper .btn{
+.container-goodslist .goods-box .wrapper .btn,
+.container-goodslist2 .goods-box .wrapper .btn{
     display: inline-block;
     margin-bottom: 0;
     font-size: 14px;
@@ -209,11 +280,13 @@ nav ul li a:hover{
     background-image: none;
     border-radius: 2px;
 }
-.container-goodslist .goods-box:hover .wrapper{
+.container-goodslist .goods-box:hover .wrapper,
+.container-goodslist2 .goods-box:hover .wrapper{
     display: block;
     transition: 0.5s;
 }
-.container-goodslist .goods-box:hover span{
+.container-goodslist .goods-box:hover span,
+.container-goodslist2 .goods-box:hover span{
     display: none;
 }
 
